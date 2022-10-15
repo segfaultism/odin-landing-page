@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+body {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+#hero {
+    background-color: #1f2937;
+    color: #f9faf8;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero .logo a{
+    font-size: 24px;
+    padding: 8px;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 256px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 0 8px;
+}
+
+a{
+    text-decoration: none;
+    color: #f9faf8;
+}
+
+li a {
+    padding: 8px;
+    font-size: 18px;
+}
+
+a:hover {
+    box-shadow: inset 256px 0 0 0 #fff;
+    color: #000;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.desc-container {
+    padding: 54px 256px;
+    display: flex;
+    gap: 256px;
+}
+
+.desc-container img {
+    width: 640px;
+    height: 296px;
+    box-shadow: 0 0 16px #000;
+}
+
+.description {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 32px;
+}
+
+.description h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 18px;
+}
+
+.description div {
+    padding: 16px;
+    width: 256px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+}
+
+.description div:hover {
+    box-shadow: inset 256px 0 0 0 #ffffff;
+    background-color: #3882f6;
+    color: #000;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+figcaption {
+    padding: 12px;
+}
+
+figcaption a {
+    padding: 4px;
+}
+
+#mid-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px;
+}
+
+#mid-page h2 {
+    font-size: 36px;
+}
+
+.illustrations {
+    display: flex;
+    gap: 128px;
+    margin: 64px;
+}
+
+.box-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 16px;
+    width: 256px;
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 4px outset #3882f6;
+    position: relative;
+}
+
+.box img {
+    width: 192px;
+    height: 192px;
+}
+
+.box p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.box:hover p{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+}   
+
+blockquote{
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    padding: 64px 480px;
+}
+
+blockquote p:first-child {
+    margin: 96px;
+}
+
+blockquote p:last-child {
+    text-align: right;
+    font-weight: 600;
+}
+
+#bottom {
+    display: flex;
+    justify-content: center;
+    padding: 128px;
+}
+
+.call-to-action {
+    background-color: #3882f6;
+    padding: 64px 128px;
+    display: flex;
+    gap: 512px;
+    color: #f9faf8;
+    font-size: 18px;
+}
+
+.call-to-action p {
+    padding: 8px;
+}
+
+.call-to-action div p:first-child {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.call-to-action div:last-child {
+    align-self: flex-end;
+    padding: 8px 32px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.call-to-action div:last-child:hover {
+    box-shadow: inset 200px 0 0 0 #fff;
+    color: #000;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+    background-color: #1f2937;
+    color: #fff;
+}
